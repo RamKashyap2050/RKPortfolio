@@ -86,7 +86,7 @@ const Contactme = () => {
         <Snackbar
           anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
           open={showSnackbar}
-          autoHideDuration={4000} // Adjust as needed
+          autoHideDuration={3000} // Adjust as needed
           onClose={handleCloseSnackbar}
           message="Thank you for contacting me. I will get back to you."
         />
