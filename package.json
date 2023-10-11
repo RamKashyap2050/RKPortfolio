@@ -6,7 +6,6 @@
   },
   "description": "Portfolio",
   "main": "server.js",
-  
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
@@ -39,7 +38,8 @@
     "multer-gridfs-storage": "^5.0.2",
     "nodemailer": "^6.9.1",
     "path": "^0.12.7",
-    "react-bootstrap": "^2.7.2"
+    "react-bootstrap": "^2.7.2",
+    "vercel": "^32.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
