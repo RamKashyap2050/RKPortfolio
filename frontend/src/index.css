@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* CSS for the circular border-radius animation */
+.profile-image-container {
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.profilephoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%; /* Start with square shape */
+  animation: borderRadiusAnimation 5s infinite alternate linear;
+}
+
+@keyframes borderRadiusAnimation {
+  0% {
+    border-radius: 0%; /* Start with square shape */
+  }
+  100% {
+    border-radius: 60%; /* Transition to circular shape */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Add responsive styles here */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
